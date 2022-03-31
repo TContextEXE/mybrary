@@ -21,6 +21,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 app.set('layout', 'layouts/layout');
+app.set('views', __dirname + '/views');
 
 app.use(expressLayouts);
 app.use(express.static('public'));
